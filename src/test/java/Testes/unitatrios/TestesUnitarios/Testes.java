@@ -47,19 +47,19 @@ public class Testes {
     @Test
     public void TesteMaiorValor() {
         service.encontrarMaior(List.of(10, 7, 4, 1, 22, 25));
-        Assert.assertEquals(0.0, 0.001);
+        Assert.assertEquals(25, 0.001);
     }
     @Test
     public void TesteMenorValor() {
         service.encontrarMaior(List.of(10, 7, 4, 1, 22, 25));
-        Assert.assertEquals(0.0, 0.001);
+        Assert.assertEquals(1, 0.001);
     }
 
     @Test
     public void TesteString() {
         service.cadastrar(List.of(1, 2, 3, 4, 5));
         String estatisticas = service.calcularEstatisticas();
-        String expected = "Média: 3.0\nDesvio Padrão: 1.4142135623730951\nMediana: 3.0";
+        String expected = "Maior Valor: 5\nMenor Valor: 1\nMédia: 3.0\nDesvio Padrão: 1.4142135623730951\nMediana: 3.0";
         Assert.assertEquals(expected, estatisticas);
     }
 

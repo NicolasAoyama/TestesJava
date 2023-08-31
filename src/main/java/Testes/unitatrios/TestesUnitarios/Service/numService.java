@@ -107,7 +107,7 @@ public class numService {
         int maior = encontrarMaior();
         int menor = encontrarMenor();
 
-        String mensagem = "Maior Valor: " + maior + "\nMenor Valor: " + menor + "\nValor Minimo: " + "\nMédia: " + media + "\nDesvio Padrão: " + desvioPadrao + "\nMediana: " + mediana;
+        String mensagem = "Maior Valor: " + maior + "\nMenor Valor: " + menor + "\nMédia: " + media + "\nDesvio Padrão: " + desvioPadrao + "\nMediana: " + mediana;
 
         return mensagem;
     }
